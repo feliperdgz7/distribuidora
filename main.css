@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(33, 37, 41);  /* Cor do header */
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(33, 37, 41);
+    background-color: rgb(250, 246, 0); /* Cor do menu */
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    background-color: rgb(250, 246, 0);
+    
+}
+
+.nav-link{
+    text-align: center;
+    color: white;
+}
+
+section h2{
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+section{
+    padding: 48px 32px;
+}
+
+.container-flex{
+    display: flex;
+} 
+
+section h2{
+    margin-bottom: 16px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+}
+
+.carousel{
+    z-index: 1
+}
+
+.card{
+    margin: 8px;
+    z-index: 1
+}
+
+.card img{
+    height: 600px;
+}
+
+form{
+    max-width: 500px;
+    margin-left: 16px;
+}
+
+form button{
+    margin-top: 8px;
+}
+
+.lista-bebidas{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*estilização da seção*/
+.lista-bebidas li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: calc(33% - 10px);
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+/*imagem do produto*/
+.lista-bebidas img{
+    max-width: 100%;
+    display: block;
+}
+
+/*regra para nome do produto*/
+.lista-bebidas li h3{
+    margin: 16px 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.modal{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 640px){
+    .container {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .lista-bebidas li{
+        width: calc(100% - 16px);
+    }
+
+    .lista-bebidas img{
+        max-width: 90%;
+    }
+
+
+    .card{
+        width: calc(100% - 16px);
+    }
+
+    .card img{
+        height: 300px;
+    }
+
+    .carousel img{
+        width: 580px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        padding: 16px 16px; 
+        font-size: 24px;
+    }
+
+    .carousel img{
+        width: 1080px;
+        height: 300px;
+    }
+
+    header {
+        padding: 16px 16px;
+    }
+
+    #produtos > .container {
+        font-size: 32px;
+    }
+
+    #produtos > .container p {
+        font-size: 24px;
+    }
+
+    #produtos > .container h3 {
+        font-size: 24px;
+    }
+
+    #produtos > .container button{
+        font-size: 24px;
+    }
+
+    .lista-bebidas li{
+        width: calc(50% - 16px);
+    }
+
+    .card{
+        width: calc(80% - 16px);
+    }
+
+    .card img{
+        height: 400px;
+    }
+
+    
+}
